@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Entry point for a program that prints the various size of types on computer it is compiled and run
  * Return: 0 - Success
