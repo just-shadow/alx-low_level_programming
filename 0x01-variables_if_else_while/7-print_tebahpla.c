@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main -Entry point for a program
- * return (0) -Program implemented succesful
+ * Return:0 -Program implemented succesful
  */
 int main(void)
 {
@@ -11,6 +11,6 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
