@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point for program
- * return (0) - Program a success
+ * Return:0 - Program a success
  */
 int main(void)
 {
@@ -15,6 +15,6 @@ int main(void)
 		}
 		ch++
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
