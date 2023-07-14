@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main -Entry point for program printing the alphabet in lowercase
- * return(0) - Program succesfully implemented
+ * Return:0 - Program succesfully implemented
  */
 int main(void)
 {
