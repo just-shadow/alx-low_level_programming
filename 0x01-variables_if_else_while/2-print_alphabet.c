@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main -Entry point for program printing the alphabet in lowercase
- * Return:0 - Program succesfully implemented
+ * main - Entry point
+ * Return: 0 (Success)
  */
 int main(void)
 {
@@ -11,6 +11,7 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
+
