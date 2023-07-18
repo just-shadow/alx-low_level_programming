@@ -12,7 +12,7 @@ int main(void)
 	for (factor = 0; factor < 50; factor++)
 	{
 		z = x + y;
-		printf("%lu"' z);
+		printf("%lu", z);
 
 		x = y;
 		y = z;
