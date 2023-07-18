@@ -5,21 +5,21 @@
  */
 int main(void)
 {
-	int factor;
+	int count;
+	unsigned long x = 0, y = 1, fibb;
 
-	unsigned long x = 0, y = 1, z;
-
-	for (factor = 0; factor < 50; factor++)
+	for (count = 0; count < 50; count++)
 	{
-		z = x + y;
-		printf("%lu", z);
+		fibb = x + y;
+		printf("%lu", fibb);
 
 		x = y;
-		y = z;
+		y = fibb;
 
-		if (factor == 49)
+		if (count == 49)
 			printf("\n");
 		else
 			printf(",");
 	}
+	return (0);
 }
