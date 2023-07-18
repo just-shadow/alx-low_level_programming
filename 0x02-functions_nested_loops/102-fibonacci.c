@@ -5,21 +5,23 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long x = 0, y = 1, fibb;
+	int x = 0;
+	long y = 1, z = 2;
 
-	for (count = 0; count < 50; count++)
+	while (x < 50)
 	{
-		fibb = x + y;
-		printf("%lu", fibb);
-
-		x = y;
-		y = fibb;
-
-		if (count == 49)
-			printf("\n");
+		if (x == 0)
+			printf("%ld", y);
+		else if (x == 1)
+			printf("%ld", z);
 		else
-			printf(",");
+		{
+			z += y;
+			y = z - y;
+			printf(", %ld", z);
+		}
+		++x;
 	}
+	printf("\n");
 	return (0);
 }
