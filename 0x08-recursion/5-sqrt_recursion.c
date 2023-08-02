@@ -9,21 +9,22 @@ int _sqrt(int n, int i);
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	return (actual_sqrt_recursion(n, 0));
+	return (_sqrt(n, 1));
 }
+
 /**
  * actual_sqrt_recursion - recurses to find natural aqroot
  * @n: integer to calaculate squareroot
  * @i: iterator
  * Return: resulting squareroot
  */
-int actual_sqrt_recursion(int n, int i)
+int _sqrt(int n, int i)
 {
-	if (i * i > n)
+	int sqrt = 1 * i;
+
+	if (sqrt > n)
 		return (-1);
-	if (i * i == n)
-		return (1);
-	return (actual_sqrt_recursion(n, i + 1));
+	if (sqrt == n)
+		return (i);
+	return (_sqrt(n, i + 1));
 }
