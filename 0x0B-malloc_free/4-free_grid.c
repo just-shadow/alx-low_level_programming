@@ -7,7 +7,7 @@
  * @height: height dimension of grid
  * Return: 0 success
  */
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 	int i;
 
